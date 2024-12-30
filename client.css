@@ -1,0 +1,104 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center; /* Ensuring all text is centered */
+}
+
+/* Client container */
+.client-container {
+    background: rgba(0, 0, 0, 0.7); /* Darkened background for better text contrast */
+    padding: 40px 20px; /* Increased padding to ensure enough space for text */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 900px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 80px; /* Adds extra space from the top */
+}
+
+/* Hover effect for the container */
+.client-container:hover {
+    transform: scale(1.025);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ffeb3b; /* Making the Welcome text more visible */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for better visibility */
+}
+
+/* APOD Section */
+#apod h2 {
+font-size: 1.75rem;
+margin-bottom: 20px;
+color: #ffeb3b;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Solar System Data */
+#solarSystemData {
+margin-top: 20px;
+text-align: left;
+font-size: 1.2rem;
+}
+
+#solarSystemData ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+#solarSystemData li {
+margin: 10px 0;
+font-size: 1.1rem;
+color: #e0e0e0;
+transition: color 0.3s ease;
+}
+
+#solarSystemData li:hover {
+color: #ffeb3b;
+}
+
+/* Current Time Section */
+#currentTime {
+margin-top: 20px;
+font-size: 1.3rem;
+font-weight: bold;
+color: #ffeb3b;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .client-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #solarSystemData li {
+    font-size: 1rem;
+    }
+
+    #currentTime {
+    font-size: 1rem;
+    }
+}
